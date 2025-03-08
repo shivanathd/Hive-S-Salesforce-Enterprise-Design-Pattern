@@ -313,6 +313,10 @@ Throughout implementation, Enterprise Architects will need to make critical deci
 
 ### Installation
 
+[![Deploy to Salesforce](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png)](https://githubsfdeploy.herokuapp.com?owner=shivanathd&repo=Hive-S-Salesforce-Enterprise-Design-Pattern)
+
+You can also install manually:
+
 1. Clone this repository
 2. Deploy the components to your Salesforce org:
    ```
