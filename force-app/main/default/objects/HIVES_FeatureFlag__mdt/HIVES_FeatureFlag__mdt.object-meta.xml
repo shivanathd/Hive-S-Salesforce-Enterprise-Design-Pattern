@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>HIVES Feature Flag</label>
+    <pluralLabel>HIVES Feature Flags</pluralLabel>
+    <visibility>Public</visibility>
+    <description>Controls feature toggles in the HIVE-S Framework</description>
+</CustomObject>
