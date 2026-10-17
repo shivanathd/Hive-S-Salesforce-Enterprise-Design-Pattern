@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequestId__c</fullName>
+    <label>Request ID</label>
+    <description>Request.getCurrent().getRequestId() of the logging transaction; matches the debug log and event monitoring.</description>
+    <type>Text</type>
+    <length>64</length>
+    <required>false</required>
+</CustomField>

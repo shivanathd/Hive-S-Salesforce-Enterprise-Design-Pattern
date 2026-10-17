@@ -1,0 +1,37 @@
+# Salesforce Code Analyzer v5 on every pull request and push to main. No org or secrets needed.
+# Fails on any severity 1 (critical) or 2 (high) finding; the full report is attached to the run.
+name: Code Analyzer
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v4 # the PMD engine needs Java
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Install Salesforce CLI and Code Analyzer
+        run: |
+          npm install --global @salesforce/cli@2.147.7
+          sf plugins install code-analyzer@5.15.0
+      - name: Scan
+        run: |
+          sf code-analyzer run --workspace force-app --rule-selector Recommended \
+            --severity-threshold 2 --output-file code-analyzer-results.html
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: code-analyzer-results
+          path: code-analyzer-results.html

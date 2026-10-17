@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HIVE-S v1 components that v2 replaces. Deleted before the v2 deploy (pre-destructive), in one command:
+     sf project deploy start --manifest manifest/package.xml \
+       --pre-destructive-changes manifest/v1-cleanup/destructiveChanges.xml --target-org <org>
+     HIVES_TriggerHandler and AccountTrigger are deleted and immediately redeployed as their v2 versions. -->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AccountDomainHandler</members>
+        <members>HIVES_ConfigurationService</members>
+        <members>HIVES_IDomainHandler</members>
+        <members>HIVES_LimitMonitor</members>
+        <members>HIVES_Logger</members>
+        <members>HIVES_SecurityUtils</members>
+        <members>HIVES_TransactionContext</members>
+        <members>HIVES_TriggerHandler</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>HIVES_TriggerConfiguration__mdt.Context__c</members>
+        <members>HIVES_SystemProperty__mdt.StringValue__c</members>
+        <members>HIVES_SystemProperty__mdt.NumberValue__c</members>
+        <members>HIVES_SystemProperty__mdt.BooleanValue__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>AccountTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>HIVES_ServiceRegistry__mdt</members>
+        <name>CustomObject</name>
+    </types>
+</Package>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users holding this skip every HIVE-S trigger handler. For data migrations and integration users that load pre-validated data.</description>
+    <isLicensed>false</isLicensed>
+    <label>HIVES Bypass All Triggers</label>
+</CustomPermission>

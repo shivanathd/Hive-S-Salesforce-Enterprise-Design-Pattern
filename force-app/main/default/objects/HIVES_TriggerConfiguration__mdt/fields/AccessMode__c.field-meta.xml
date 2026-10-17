@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccessMode__c</fullName>
+    <label>Access Mode</label>
+    <description>Access level the handler receives in this.access for its queries and DML. Triggers always run in system mode; choose User when the handler acts on behalf of the person saving.</description>
+    <inlineHelpText>System: ignore the saving user's permissions. User: enforce their sharing, object and field permissions in queries and DML that use this.access.</inlineHelpText>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>System</fullName>
+                <default>true</default>
+                <label>System</label>
+            </value>
+            <value>
+                <fullName>User</fullName>
+                <default>false</default>
+                <label>User</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>false</required>
+</CustomField>

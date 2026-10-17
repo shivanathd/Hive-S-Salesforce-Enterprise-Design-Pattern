@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BypassPermission__c</fullName>
+    <label>Bypass Permission</label>
+    <description>Optional custom permission API name. Users holding it skip this handler (for example during data loads).</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <type>Text</type>
+    <length>80</length>
+    <required>false</required>
+</CustomField>

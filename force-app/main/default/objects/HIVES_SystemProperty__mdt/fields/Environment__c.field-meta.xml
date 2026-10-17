@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Environment__c</fullName>
-    <description>The environment this property applies to</description>
-    <externalId>false</externalId>
-    <fieldManageability>DeveloperControlled</fieldManageability>
-    <inlineHelpText>Specify the environment this property applies to, or leave blank for all environments</inlineHelpText>
     <label>Environment</label>
-    <required>false</required>
+    <description>Limits the record to one kind of org. A record for the current environment wins over a record with no environment.</description>
+    <inlineHelpText>Leave blank to apply everywhere.</inlineHelpText>
+    <fieldManageability>DeveloperControlled</fieldManageability>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>DEV</fullName>
+                <fullName>PRODUCTION</fullName>
                 <default>false</default>
-                <label>Development</label>
+                <label>Production org</label>
             </value>
             <value>
-                <fullName>QA</fullName>
+                <fullName>SANDBOX</fullName>
                 <default>false</default>
-                <label>Quality Assurance</label>
+                <label>Sandbox</label>
             </value>
             <value>
-                <fullName>UAT</fullName>
+                <fullName>SCRATCH</fullName>
                 <default>false</default>
-                <label>User Acceptance Testing</label>
-            </value>
-            <value>
-                <fullName>PROD</fullName>
-                <default>false</default>
-                <label>Production</label>
+                <label>Scratch or trial org</label>
             </value>
         </valueSetDefinition>
     </valueSet>
+    <required>false</required>
 </CustomField>
