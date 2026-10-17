@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>HIVES_Bypass_All_Triggers</name>
+    </customPermissions>
+    <description>Skips every HIVE-S trigger handler. Assign only for the duration of a data load.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>HIVES Data Load Bypass</label>
+</PermissionSet>

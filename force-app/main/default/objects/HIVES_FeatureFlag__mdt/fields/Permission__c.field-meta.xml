@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permission__c</fullName>
+    <label>Permission</label>
+    <description>Optional custom permission API name. When set, the feature is on only for users holding it (inside the date window).</description>
+    <inlineHelpText>Use to pilot a feature with a group of users.</inlineHelpText>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <type>Text</type>
+    <length>80</length>
+    <required>false</required>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllowRecursion__c</fullName>
+    <label>Allow Recursion</label>
+    <description>When unticked, the handler does not run again for the same object and event while it is already running (for example when it updates records of its own object).</description>
+    <inlineHelpText>Leave unticked unless the handler must see its own nested saves.</inlineHelpText>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <type>Checkbox</type>
+    <defaultValue>false</defaultValue>
+</CustomField>

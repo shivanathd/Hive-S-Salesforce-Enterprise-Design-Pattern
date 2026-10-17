@@ -6,7 +6,7 @@
     }
   ],
   "name": "HIVE-S-Framework",
-  "namespace": "HIVES",
+  "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0"
+  "sourceApiVersion": "68.0"
 }
